@@ -10,6 +10,7 @@ all:
 	mmd -i $(OSNAME).img ::/EFI
 	mmd -i $(OSNAME).img ::/EFI/BOOT
 	mcopy -i $(OSNAME).img bin/startup.nsh ::
+	mcopy -i $(OSNAME).img boot/assets/rb.png ::
 	mcopy -i $(OSNAME).img bin/boot.efi ::/EFI/BOOT
 	# mcopy -i $(OSNAME).img $(BUILDDIR)/kernel.elf ::
 	mcopy -i $(OSNAME).img bin//zap-light16.psf ::
